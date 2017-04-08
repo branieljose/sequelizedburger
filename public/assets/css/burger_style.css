@@ -1,0 +1,50 @@
+body {
+
+	background-image: url("http://www.shakengolynnwood.com/wp-content/uploads/2015/01/Chicken-Burger2.jpg");
+	
+	background-size: 100% ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	/*opacity: 0.6;*/
+}
+button:hover,
+button:focus {
+  color: #4aaaa5;
+}
+h1 {
+	font-size: 30px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
+
+}
+li {
+  
+  margin: 5px;
+  padding: 5px;
+}
+.card-panel {
+	padding-top:10px;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.container{
+	background-color: #ecb74c;
+
+	
+	/*|initial|inherit;*/
+	/*background-color: #ecb74c;*/
+	/*opacity: 0.5;*/
+}
+.add-form {
+  padding: 30px;
+}
+/*.create-update-form {
+  background: aqua;
+  margin: 5px;
+  padding: 5px;
+}*/
+
+.form-group {
+  margin-bottom: 5px;
+}

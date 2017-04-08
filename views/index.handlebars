@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="burger">
+    <h1>Eat-Da-Burger!</h1>
+      <ul>
+        {{#each burgers}}
+          {{#unless this.devoured}}
+           <li>
+             <div class="card-panel hoverable"> 
+             
+              <div class="left-align">{{this.burger_name}}</div>
+
+             <div class="right-align"><form action="/{{this.id}}?_method=PUT" method="POST">
+                <input type="hidden" name="devoured" value="true">
+                <button class="waves-effect waves-light btn-large" type="submit">Devour it!</button></div>
+              </form>
+            </div>
+          </li>
+          {{/unless}}
+        {{/each}}
+      </ul>
+  </div>
+
+  <div class="devoured">
+    <h1>Devoured Burgers</h1>
+      <ul>
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <li>
+            <div>
+            <div class="card-panel hoverable">
+              {{this.burger_name}}
+            </div>
+              <br>
+            </div>
+
+            </li>
+          {{/if}}
+        {{/each}}
+      </ul>
+  </div>
+ 
+    <form action="/add_burger" method="POST">
+      <h1>Add a Burger</h1>
+       <div class="add-form">
+        <div class="input-field col s12">
+          <textarea name="name" id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1"></label>
+          <button class="waves-effect waves-light btn-large" type="submit">Add Burger</button>    
+    </form>
+ </div>
